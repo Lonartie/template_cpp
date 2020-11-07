@@ -6,13 +6,13 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "make clean; make",
+            "command": "make clean; premake5 gmake; make",
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "make clean; make; echo =========== OUTPUT ===========; ./main",
+            "command": "make clean; premake5 gmake; make; echo =========== OUTPUT ===========; ./main",
             "problemMatcher": []
         }
     ]
